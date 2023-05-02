@@ -30,7 +30,6 @@ export default function ScanScreen({ navigation }){
   }, []);*/
   const handleBarCodeScanned = async({ type, data }) => {
     setScanned(true);
-    setData(data);
     //alert(`Bar code with type ${type},and data ${data} has been scanned!`);
     navigation.navigate('Login',{code:data})
   };

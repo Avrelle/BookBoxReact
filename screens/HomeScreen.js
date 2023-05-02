@@ -1,16 +1,11 @@
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ButtonScan from "../components/ButtonScan";
 import {View, StyleSheet } from 'react-native';
 import { useState } from "react";
 
-
-
-
-
 export default function HomeScreen({ navigation }) {
   const [condition, setCondition] = useState(false) 
-  const pipi = () => {
+  const navig = () => {
     setCondition(true)
     navigation.navigate("Scan")
   }
@@ -18,10 +13,8 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
     <Header/>
      <View style={styles.buttonScanCard}>
-     <ButtonScan label="Scan your card" onPress={pipi}/>
-
+     <ButtonScan label="Scan your card" onPress={navig}/>
     </View>
-    <Footer/>
     </View>
   );
 }

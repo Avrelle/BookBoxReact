@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -19,7 +18,6 @@ export default function ProfilScreen({route}) {
               </View>
             
         </View> 
-      <Footer/>
     </View>
   );
 }

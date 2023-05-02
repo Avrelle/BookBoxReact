@@ -16,7 +16,7 @@ export default function Button({ label, onPress }) {
                 <MaterialIcons name="qr-code-scanner" size={24} color="white" style={styles.buttonIcon} />
           
               
-                <Text style={[styles.buttonLabel, { color: "white", fontFamily:"Baskerville"}]}>{label}</Text>
+                <Text style={[styles.buttonLabel,{color: "white"}]}>{label}</Text>
             </Pressable>
         </View>
         );

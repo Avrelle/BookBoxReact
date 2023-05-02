@@ -1,6 +1,6 @@
 import { useEffect, } from "react";
-import { StyleSheet, Text, View } from 'react-native';
-import { Navigate } from "react-router-native";
+import { StyleSheet} from 'react-native';
+
 
 //collect data of qr code and fetch api
 export default function Login({navigation, route}) {
@@ -12,7 +12,6 @@ export default function Login({navigation, route}) {
         {
           method: "POST",
           headers: {
-            Accept: "application/json",
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
